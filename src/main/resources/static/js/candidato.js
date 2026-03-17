@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Cargar vacantes
   async function cargarEmpleos() {
     try {
-      const res = await fetch("http://localhost:8080/empleos");
+      const res = await fetch("https://portal-empleo-v0qn.onrender.com/empleos");
       if (!res.ok) throw new Error("No se pudo obtener la lista de empleos");
 
       const data = await res.json();
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       // Guardar currículum
-      const res = await fetch("http://localhost:8080/curriculum", {
+      const res = await fetch("https://portal-empleo-v0qn.onrender.com/curriculum", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(dataCurriculum)
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
       alert(data.message || "✅ Currículum enviado correctamente");
 
       // Registrar postulación
-      await fetch("http://localhost:8080/postulaciones", {
+      await fetch("https://portal-empleo-v0qn.onrender.com/postulaciones", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

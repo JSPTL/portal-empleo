@@ -7,7 +7,7 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
   const tipo = document.getElementById("tipo").value;
 
   try {
-    const response = await fetch("http://localhost:8080/registro", { // ✅ RUTA CORRECTA
+    const response = await fetch("https://portal-empleo-v0qn.onrender.com/registro", { // ✅ RUTA CORRECTA
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ nombre, correo, password, tipo })

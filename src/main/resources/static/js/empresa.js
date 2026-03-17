@@ -18,7 +18,7 @@ async function cargarEmpleos(){
 
 try{
 
-const res = await fetch("http://localhost:8080/empleos");
+const res = await fetch("https://portal-empleo-v0qn.onrender.com/empleos");
 const data = await res.json();
 
 lista.innerHTML="";
@@ -69,7 +69,7 @@ const nuevaUbicacion=prompt("Nueva ubicación");
 
 if(!nuevoTitulo || !nuevaDescripcion) return;
 
-await fetch(`http://localhost:8080/empleos/${id}`,{
+await fetch(`https://portal-empleo-v0qn.onrender.com/empleos/${id}`,{
 method:"PUT",
 headers:{
 "Content-Type":"application/json"
@@ -99,7 +99,7 @@ const id=e.target.dataset.id;
 
 if(!confirm("¿Eliminar vacante?")) return;
 
-await fetch(`http://localhost:8080/empleos/${id}`,{
+await fetch(`https://portal-empleo-v0qn.onrender.com/empleos/${id}`,{
 method:"DELETE"
 });
 
@@ -135,7 +135,7 @@ idEmpresa:user.id
 
 };
 
-await fetch("http://localhost:8080/empleos",{
+await fetch("https://portal-empleo-v0qn.onrender.com/empleos",{
 
 method:"POST",
 headers:{

@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const password = document.getElementById("password").value;
 
     try {
-      const res = await fetch("http://localhost:8080/login", {
+      const res = await fetch("https://portal-empleo-v0qn.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ correo, password })
