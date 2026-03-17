@@ -1,0 +1,104 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #eaf7ee;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  background-color: #1b7b4c;
+  color: white;
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 2em auto;
+}
+
+h2 {
+  color: #1b7b4c;
+}
+
+.formulario {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label {
+  display: block;
+  margin-top: 1em;
+}
+
+.formulario input, .formulario textarea {
+  width: 100%;
+  padding: 0.7em;
+  margin-top: 0.4em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn {
+  background-color: #1b7b4c;
+  color: white;
+  border: none;
+  padding: 0.8em 1.5em;
+  margin-top: 1.2em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #16633c;
+}
+
+.vacantes {
+  margin-top: 2em;
+}
+
+.oferta-card {
+  background: white;
+  border-left: 5px solid #1b7b4c;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+
+/* 🔹 Estilos del contenedor de ofertas */
+.btnEliminar,
+.btnActualizar {
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
+/* 🔴 Botón eliminar */
+.btnEliminar {
+  background-color: #b71c1c;
+}
+
+.btnEliminar:hover {
+  background-color: #d32f2f;
+}
+
+/* 🟢 Botón actualizar */
+.btnActualizar {
+  background-color: #1b7b4c;
+}
+
+.btnActualizar:hover {
+  background-color: #16633c;
+}
